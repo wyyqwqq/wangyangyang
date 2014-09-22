@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<h1 align="center">Canvas</h1>
+</head>
+
+<body>
+
+<canvas id="myCanvas" width="800" height="700" style="border:1px solid #d3d3d3;">
+  your browser doesn't support canvas!
+</canvas>
+
+<script type="text/javascript">
+
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+
+var posX=20;
+var posY=100;
+
+var vx=5;
+var vy=-5;
+var gravity=1;
+
+setInterval(function fall(){
+
+ctx.fillRect(0,0,ctx.width,ctx.height);///replace the canvas
+ctx.fillStyle='#000000';
+ctx.fillRect(0,0,800,700);
+
+posX += 1;
+posY += 0.25;
+
+ctx.beginPath();
+ctx.fillStyle="white";
+
+ctx.arc(posX,posY,10,0,2*Math.PI,true);///draw an arc
+
+ctx.fillStyle="white";
+ctx.fill();
+ctx.closePath();
+
+},30);
+
+setInterval(function rebound(){
+posX+=vx;
+posY+=vy;
+
+if(posY>canvas.height*0.75){
+ vy*=-0.65;              ///rebound
+ vx*=0.75;               ///reduce the speed in x-axis
+ posY=canvas.height*0.75;///reduce the height
+ }
+vy+=gravity;
+},30);
+
+</script>
+
+</body>
+</html>
