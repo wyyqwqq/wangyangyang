@@ -6,3 +6,6 @@ Exploration 1
 
 Exploration 2
   I want to make an animation of a ball falling down and rebounding for several times until it lost energy to bounce.
+
+Exploration 3
+  I try an Express way doing a cookie setting.
