@@ -9,3 +9,6 @@ Exploration 2
 
 Exploration 3
   I try an Express way doing a cookie setting.
+  
+Exploration 4
+ including stick.html and stickup.css
