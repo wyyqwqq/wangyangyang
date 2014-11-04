@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+	<script src="jquery.js"></script>
+	<!-- Bootstrap & Snippet plugin core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="stickup.css" rel="stylesheet">    
+	
+	<!-- Bootstrap & Plugins core JavaScript -->
+    <script src="bootstrap.min.js"></script> 
+    <script src="stickUp.min.js"></script>
+   
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+
+<!-- Navbar -->
+<div class="navbar-wrapper">
+      <div class="container">
+      <div class="navwrapper">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">NAVBAR</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="menuItem active"><a href="#title">Top</a></li>
+                <li class="menuItem"><a href="#album">Album</a></li>
+                <li class="menuItem"><a href="#singer">Singer</a></li>
+                <li class="menuItem"><a href="#lyrics">Lyrics</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div>
+      
+      </div>
+    </div>
+<!-- Navbar end -->
+
+<!-- content -->	
+ <h1 style="color:#1E90FF" id="title">Top<h1>
+
+ <p style="text-align:center" id="album"><img src="shipandtheglobe.jpg" width="700" height="850" />
+ </p>
+ 
+ <h2 align="center" id="singer">Kea Sun</h2>
+ <p style="text-align:center"><img src="kae.jpg" width="400" height="550" />
+ </p>
+
+ <p align="center" id="lyrics">Oceans apart and it's heavy on my heart</p>
+ <p align="center">Roll and row but my rolling game too slow</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">I'm spending my time watching the ship and the globe</p>
+ <p align="center">Why beauty's in the simple things</p>
+ <p align="center">Your sweetness and your elegance</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">Paa pa pa paa pa pa paa papa pa paa paa</p>
+ <p align="center">Roll and row but my rolling game too slow</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">I'm spending my time watching the ship and the globe</p>
+ <p align="center">Why beauty's in the simple things</p>
+ <p align="center">Your sweetness and your elegance</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">Paa pa pa paa pa pa paa papa pa paa paa</p>
+ <p align="center">Roll and row but my rolling game too slow</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">I'm spending my time watching the ship and the globe</p>
+ <p align="center">Why beauty's in the simple things</p>
+ <p align="center">Your sweetness and your elegance</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">Paa pa pa paa pa pa paa papa pa paa paa</p>
+ <p align="center">Roll and row but my rolling game too slow</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">I'm spending my time watching the ship and the globe</p>
+ <p align="center">Why beauty's in the simple things</p>
+ <p align="center">Your sweetness and your elegance</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">Paa pa pa paa pa pa paa papa pa paa paa</p>
+ <p align="center">Roll and row but my rolling game too slow</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">I'm spending my time watching the ship and the globe</p>
+ <p align="center">Why beauty's in the simple things</p>
+ <p align="center">Your sweetness and your elegance</p>
+ <p align="center">I'm happy you know</p>
+ <p align="center">Paa pa pa paa pa pa paa papa pa paa paa</p>
+<!-- content end -->
+ 
+    <script type="text/javascript">
+       //initiating jQuery
+        jQuery(function($) {
+           $(document).ready( function() {
+            //enabling stickUp on the '.navbar-wrapper' class
+           $('.navbar-wrapper').stickUp({
+		        parts: {
+                     0:'title',
+                     1:'album',
+                     2:'singer',
+                     3:'introduction'
+                    },
+                    itemClass: 'menuItem',
+                    itemHover: 'active',
+                    topMargin: 'auto'					
+		          });
+         });
+       });
+
+     </script>
+	 
+	 <script type="text/javascript">
+         //initializing jQuery
+         jQuery(function($) {
+             $(document).ready( function() {
+               //enabling stickUp on the '.navbar-wrapper' class
+                $('.navbar-wrapper').stickUp({
+                  //enabling marginTop with the 'auto' setting 
+                   marginTop: 'auto'
+                  });
+              });
+            });
+              
+     </script>  
+
+   
+	 
+            
+</body>
+</html>
