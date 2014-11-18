@@ -12,3 +12,6 @@ Exploration 3
   
 Exploration 4
  including stick.html and stickup.css
+
+Exploration 5
+ including ResNav.html and styles.css
