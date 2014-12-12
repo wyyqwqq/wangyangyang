@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery.js"></script>
+  <script src="backbone-min.js"></script>
+  <script src="messenger.min.js"></script>
+  <script src="messenger-theme-flat.js"></script>
+  <link href="messenger.css" rel="stylesheet">
+  <link href="messenger-theme-flat.css" rel="stylesheet">
+  <link href="pin.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                Messenger.options = {
+                    extraClasses: "messenger-fixed messenger-on-top messenger-on-right",
+                    theme: "flat"
+                };
+var msg;
+
+msg = Messenger().post({
+  message: 'You click the Album!!',
+  type: 'info',
+  actions: {
+    cancel: {
+      label: 'explore more...',
+      action: function() {
+        return msg.update({
+          message: "It's a trick!!",
+          type: 'success',
+          actions: false
+        });
+      }
+    }
+  }
+});
+
+       });
+    });
+    </script>
+    </head>  
+
+<body>
+
+<!-- content -->	
+ <h1 style="color:#1E90FF" id="title">Top<h1>
+
+ <button>
+     <p style="text-align:center" id="album"><img src="shipandtheglobe.jpg" width="600" height="650" />
+ </p>
+     </button>
+ 
+ <h2 id="singer">Kea Sun</h2>
+ <p><img src="kae.jpg" width="400" height="550" />
+ </p>
+
+ <p id="lyrics">Oceans apart and it's heavy on my heart</p>
+ <p>Roll and row but my rolling game too slow</p>
+ <p>I'm happy you know</p>
+ <p>I'm spending my time watching the ship and the globe</p>
+ <p>Why beauty's in the simple things</p>
+ <p>Your sweetness and your elegance</p>
+ <p>I'm happy you know</p>
+ <p>Paa pa pa paa pa pa paa papa pa paa paa</p>
+ <p>Roll and row but my rolling game too slow</p>
+ <p>I'm happy you know</p>
+ <p>I'm spending my time watching the ship and the globe</p>
+ <p>Why beauty's in the simple things</p>
+ <p>Your sweetness and your elegance</p>
+ <p>I'm happy you know</p>
+ <p>Paa pa pa paa pa pa paa papa pa paa paa</p>
+ 
+<!-- content end -->
+
+
+</body>
+
+</html>
+
